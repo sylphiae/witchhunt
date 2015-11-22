@@ -1,6 +1,10 @@
+#main method to invoke classes 
+#attribute turn day or night
+#type coercion 
+
 class Role(object):
     
-    def _init_(self, name, alignment, is_awake, is_dead, ability)
+    def _init_(self, name, alignment, is_awake, is_dead, ability):
         self.name = name
         self.alignment = alignment
         self.is_awake = is_awake 
@@ -14,81 +18,75 @@ class Role(object):
     	return self.ability 
 
 class Priest(Role):
-	def __init__(self, name, alignment, is_awake, is_dead, ability):
-		Role.__init__(self, name, alignment, is_awake, is_dead, ability)
-		self.whois = whois
+   #	__instance = None
+    #def __new__(self, name, alignment, is_awake, is_dead, ability):
+        #if Priest.__instance is None:
+        	#Priest.__instance = object.__new__(self, name, alignment, is_awake, is_dead, ability)
+        #Priest.__instance.val = val
+        #return Priest.__instance
+	
 
 	def whois(self):
 		return self.whois 
 
+priest1 = Priest()
+
 
 class Apprentice(Role):
-	def __init__(self, name, alignment, is_awake, is_dead, ability):
-		Role.__init__(self, name, alignment, is_awake, is_dead, ability)
-		self.choice = choice
 
 	def choice(self):
 		return self.choice
 
+apprentice1 = Apprentice()
 
 class Judge(Role):
-	def __init__(self, name, alignment, is_awake, is_dead, ability):
-		Role.__init__(self, name, alignment, is_awake, is_dead, ability)
-		self.kill_choice = kill_choice
+	
 
 	def kill_choice(self):
 		return self.kill_choice
 
+judge1 = Judge()
 
 class Gravedigger(Role):
-	def __init__(self, name, alignment, is_awake, is_dead, ability):
-		Role.__init__(self, name, alignment, is_awake, is_dead, ability)
-		self.whois = whois
+
 
 	def whois(self):
 		return self.whois 
 
+gravedigger1 = Gravedigger()
+
 
 class Survivalist(Role):
-	def __init__(self, name, alignment, is_awake, is_dead, ability):
-		Role.__init__(self, name, alignment, is_awake, is_dead, ability)
-		self.lives_left = lives_left
+	
 
 	def lives_left(self):
 		return self.lives_left
 
+survivalist1 = Survivalist()
 
 class DOB(Role):
-	def __init__(self, name, alignment, is_awake, is_dead, ability):
-		Role.__init__(self, name, alignment, is_awake, is_dead, ability)
-		self.kill_with = kill_with
 
 	def kill_with(self):
 		return self.kill_with
 
-
+dob1 = DOB()
 
 class Gambler(Role):
-	def __init__(self, name, alignment, is_awake, is_dead, ability):
-		Role.__init__(self, name, alignment, is_awake, is_dead, ability)
-		self.even_odd = even_odd
+	
 
 	def even_odd(self):
 		return self.even_odd
 
+gambler1 = Gambler()
+
 class Angel(Role):
-	def __init__(self, name, alignment, is_awake, is_dead, ability):
-		Role.__init__(self, name, alignment, is_awake, is_dead, ability)
-		self.pick = pick
+	
 
 	def pick(self):
 		return self.pick
 
 class Demon(Role):
-	def __init__(self, name, alignment, is_awake, is_dead, ability):
-		Role.__init__(self, name, alignment, is_awake, is_dead, ability)
-		self.pick = pick
-
+	
 	def pick(self):
 		return self.pick
 
